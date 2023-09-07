@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--
+    LinearLayout : 차례대로 배치
+    android:orientation = horizontal (가로) [기본적], verticla (세로)
+
+    android:layout_gravity="right" //주어진 영역 내에서 오른쪽으로 이동
+    android:layout_gravity="center_horizontal" //주어진 영역 내에서 가로 중앙에 위치
+    android:layout_gravity="center_vertical" //주어진 영역 내에서 세로 중앙에 위치
+    -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_gravity="right"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <!--
+        여백을 채우는 방법 (주어진 영역 내에서 남은 영역을 다 채움)
+         android:layout_weight="1">
+        -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            />
+        <!--
+        android:gravity="left" //버튼 안의 글자 위치 설정 (gravity)
+        -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:layout_weight="1"
+            android:gravity="right"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="4">
+    <!--열의 개수가 4개인 테이블 -->
+
+    <Button
+        android:text="0"
+        android:layout_rowSpan="3"
+        android:layout_gravity="fill_vertical"/>
+    <!--
+    android:layout_rowSpan="3" //행 3개를 합침
+    android:layout_gravity="fill_vertical" //세로로 여백을(영역을) 채움
+    -->
+    <Button
+        android:text="1"/>
+    <Button
+        android:text="2"/>
+    <Button
+        android:text="3"/>
+    <Button
+        android:text="4"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"/>
+    <!--
+    [행과 열은 0부터 시작]
+    android:layout_row="1" //1번째 행
+    android:layout_column="2" //2번째 열
+    android:layout_columnSpan="2" //열 2개를 합침
+    android:layout_gravity="fill_horizontal" //가로로 여백을(영역을) 채움
+    -->
+    <Button
+        android:text="5"
+        android:layout_row="2"
+        android:layout_column="1"/>
+    <Button
+        android:text="6"/>
+    <Button
+        android:text="7"/>
+    <Button
+        android:text="8"/>
+</GridLayout>

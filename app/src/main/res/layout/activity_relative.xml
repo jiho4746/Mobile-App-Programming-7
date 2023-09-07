@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--
+    layout_above //기존 뷰의 위쪽에 배치
+    layout_below //기본 뷰의 아래쪽에 배치
+    layout_toLeftOf //기존 뷰의 왼쪽에 배치
+    layout_toRightOf //기본 뷰의 오른쪽에 배치
+
+    [부모한테 맞추는 방법]
+    layout_alignTop //기존 뷰와 위쪽을 맞춤
+    layout_alignBottom //기존 뷰와 아래쪽을 맞춤
+    layout_alignLeft //기존 뷰와 왼쪽을 맞춤
+    layout_alignRight //기존 뷰와 오른쪽을 맞춤
+    layout_alignBaseline //기존 뷰와 텍스트 기준선을 맞춤
+    -->
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON"
+        android:layout_alignTop="@id/button9"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="151dp"
+        android:layout_height="89dp"
+        android:text="BUTTON"
+        android:layout_centerInParent="true"/>
+
+        <!--
+        android:layout_centerInParent="true"
+        [동일한 의미]
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button9"
+        android:layout_toRightOf="@id/button9"
+        android:text="btn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button9"
+        android:layout_alignRight="@id/button9"
+        android:text="btn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn"
+        android:layout_toRightOf="@id/button9" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button9"
+        android:layout_alignLeft="@id/button9"
+        android:text="btn" />
+    <!--
+    android:layout_alignLeft="@id/button9" //button9를 기준으로 왼쪽 정렬
+    android:layout_alignRight="@id/button9" //button9를 기준으로 오른쪽 정렬
+    -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn"
+        android:layout_below="@id/button9"
+        android:layout_toLeftOf="@id/button9"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn"
+        android:layout_below="@id/button9"
+        android:layout_toLeftOf="@id/button9"/>
+
+
+</RelativeLayout>
